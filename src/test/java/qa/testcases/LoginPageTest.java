@@ -12,7 +12,7 @@ import qa.pages.LogInPage;
 public class LoginPageTest extends TestBase {
 
 	LogInPage LogInPage;
-	HomePage homePage;
+	HomePage HomePage;
 
 	public LoginPageTest() {
 		super();
@@ -44,6 +44,6 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority=3)
 	public void loginTest() {
-		homePage = LogInPage.LogIn(prop.getProperty("username"), prop.getProperty("password"));
+		HomePage = LogInPage.LogIn(prop.getProperty("username"), prop.getProperty("password"));
 	}
 }
